@@ -3,12 +3,11 @@
 *::after {
   box-sizing: border-box;
 }
-* {
-  font-family: Roboto, sans-serif;
-}
+
 body {
   margin: 0;
   padding: 0;
+  font-family: Roboto, sans-serif;
 }
 
 body {
@@ -53,8 +52,7 @@ main {
   display: flex;
   flex-direction: column;
 
-  height: 100vh;
-  background-color: rgb(232, 232, 232);
+  background-color: rgb(245, 250, 254);
 }
 .quote {
   display: flex;
@@ -62,5 +60,77 @@ main {
   flex-wrap: wrap;
   padding: 20px;
   margin-top: 40px;
+  font-weight: 600;
+  color: rgb(66, 66, 66);
+}
+
+.form-wraper {
+  background-color: white;
+  padding: 20px;
+  box-shadow: 1px 2px 2px rgb(214, 214, 214);
+  margin-bottom: 30px;
+}
+
+fieldset {
+  border: none;
+  display: flex;
+
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+fieldset div {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+label {
+  color: gray;
+}
+form p {
   font-weight: 700;
+}
+input {
+  padding: 5px;
+  min-width: 30ch;
+  outline: none;
+  border: 1px solid gray;
+  border-radius: 3px;
+  transition: 180ms box-shadow ease-in-out;
+}
+
+input:focus {
+  border-color: blue;
+  outline: none;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 30%);
+}
+
+input[type="password"]:invalid {
+  border: 1px solid red;
+}
+
+input:valid {
+  border: 1px solid gray;
+}
+
+.cta {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+button {
+  background-color: rgb(79, 91, 73);
+  color: white;
+  width: max-content;
+  padding: 10px 30px;
+  border: none;
+  border-radius: 5px;
+  font-size: medium;
+}
+.cta p {
+  font-weight: 400;
+}
+.log_in-text {
+  font-weight: 700;
+  color: rgb(79, 91, 73);
 }
