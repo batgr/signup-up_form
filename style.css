@@ -1,3 +1,11 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+* {
+  font-family: Roboto, sans-serif;
+}
 body {
   margin: 0;
   padding: 0;
@@ -39,4 +47,20 @@ body {
 .logo {
   width: 25%;
   height: auto;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+
+  height: 100vh;
+  background-color: rgb(232, 232, 232);
+}
+.quote {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding: 20px;
+  margin-top: 40px;
+  font-weight: 700;
 }
